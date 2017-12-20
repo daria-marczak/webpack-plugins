@@ -7794,6 +7794,10 @@ var _App = __webpack_require__(34);
 
 var _App2 = _interopRequireDefault(_App);
 
+var _Title = __webpack_require__(39);
+
+var _Title2 = _interopRequireDefault(_Title);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
@@ -7842,7 +7846,7 @@ var App = function (_React$Component) {
             return _react2.default.createElement(
                 "div",
                 { className: _App2.default.TodoApp },
-                "Our appliaction components go here."
+                _react2.default.createElement(_Title2.default, { counter: this.state.data.length })
             );
         }
     }]);
@@ -8633,6 +8637,45 @@ module.exports = function (css) {
 	// send back the fixed css
 	return fixedCss;
 };
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(2);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//Twoim zadaniem będzie zaimplementowanie komponentu Title, który będzie wyświetlał tytuł aplikacji wraz z liczbą zadań, które zostały dodane do listy.
+
+var Title = function Title(props) {
+    return _react2.default.createElement(
+        "div",
+        { className: "header" },
+        _react2.default.createElement(
+            "h1",
+            null,
+            "Task board"
+        ),
+        _react2.default.createElement(
+            "p",
+            null,
+            "Number of tasks is: ",
+            props.counter
+        )
+    );
+};
+
+exports.default = Title;
 
 /***/ })
 /******/ ]);
