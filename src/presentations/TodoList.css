@@ -1,0 +1,18 @@
+ul {
+    list-style-type: none;
+}
+ li {
+    padding: 1rem;
+    background-color: #ecf0f1;
+    color: #34495e;
+    margin-top: 2rem;
+ }
+
+ button {
+     display: inline-block;
+     background-color: #f1c40f;
+     color: #34495e;
+     border: none;
+     float: right;
+     margin-left: 2rem;
+ }
