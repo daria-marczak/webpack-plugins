@@ -3,7 +3,8 @@ import style from "./TodoList.css"
 
 const TodoList = (props) => {
     const todoItem = props.items.map((item) => {
-        return <li content={item} key={item.id}>
+        return
+        <li content={item} key={item.id}>
             {item.text}
             <button type="button" onClick={() => props.remove(item.id)}>x</button>
         </li>

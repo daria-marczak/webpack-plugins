@@ -8,7 +8,7 @@ import Todo from "../presentations/Todo"
 
 class App extends React.Component {
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
             data: [
                 {
@@ -28,21 +28,21 @@ class App extends React.Component {
         const todo = {
             text: val,
             id: uuid.v4(),
-        };
-        const data = [...this.state.data, todo];
+        }
+        const data = [...this.state.data, todo]
         this.setState({
             input:"",
             data
         })
     }
     removeTodo(id) {
-        const remainder = this.state.data.filter(todo => todo.id !== id);
-        this.setState({data: remainder});
+        const remainder = this.state.data.filter(todo => todo.id !== id)
+        this.setState({data: remainder})
     }
     onChangeHandler(event) {
-        let task = event.target.value;
-        this.setState({input: task});
-        event.preventDefault();
+        let task = event.target.value
+        this.setState({input: task})
+        event.preventDefault()
     }
     render() {
         return (
@@ -59,4 +59,4 @@ class App extends React.Component {
     }
 }
 
-export default App;
+export default App

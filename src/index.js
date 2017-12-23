@@ -5,7 +5,7 @@ import { AppContainer } from "react-hot-loader"
 
 if (module.hot) {
     module.hot.accept("./containers/App", () => {
-        const NextApp = require("./containers/App").default;
+        const NextApp = require("./containers/App").default
         ReactDOM.render(
             <AppContainer>
                 <NextApp />
