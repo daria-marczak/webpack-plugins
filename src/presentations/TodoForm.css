@@ -1,0 +1,10 @@
+input {
+    padding: 0.2rem 1rem;
+    text-transform: uppercase;
+}
+
+button {
+    text-transform: uppercase;
+    padding: 0.2rem 1rem;
+    font-weight: bold;
+}
