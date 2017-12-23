@@ -1,10 +1,10 @@
-import React from "react";
-import uuid from "uuid";
-import style from "./App.css";
-import Title from "./../presentations/Title";
-import TodoList from "./../presentations/TodoList";
-import TodoForm from "./../presentations/TodoForm";
-import Todo from "./../presentations/Todo";
+import React from "react"
+import uuid from "uuid"
+import style from "./App.css"
+import Title from "../presentations/Title"
+import TodoList from "../presentations/TodoList"
+import TodoForm from "../presentations/TodoForm"
+import Todo from "../presentations/Todo"
 
 class App extends React.Component {
     constructor(props) {
@@ -22,7 +22,7 @@ class App extends React.Component {
                     text: "Walk the dog"
                 }
             ]
-        };
+        }
     }
     addTodo(val) {
         const todo = {
@@ -30,10 +30,10 @@ class App extends React.Component {
             id: uuid.v4(),
         };
         const data = [...this.state.data, todo];
-        this.setState({data});
         this.setState({
-            input:""
-        });
+            input:"",
+            data
+        })
     }
     removeTodo(id) {
         const remainder = this.state.data.filter(todo => todo.id !== id);
@@ -55,8 +55,8 @@ class App extends React.Component {
                     submit={this.addTodo.bind(this)}
                 />
             </div>
-        );
+        )
     }
-};
+}
 
 export default App;
