@@ -1,17 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100");
+
 body {
     margin: 0;
     padding: 0;
+    font-family: "Lato";
 }
 
 .TodoApp {
-    background-color: #34495e;
-    color: #ecf0f1;
+    background-color: white;
+    color: #f1c40f;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
     align-items: center;
-    align-content: center;
-    width: 100vw;
+    padding-left: 2rem;
+    width: 90vw;
     height: 100vh;
 }

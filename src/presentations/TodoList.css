@@ -1,18 +1,24 @@
 ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
 }
  li {
     padding: 1rem;
-    background-color: #ecf0f1;
+    background-color: white;
+    border: 1px solid #ecf0f1;
+    border-radius: 6px;
     color: #34495e;
     margin-top: 2rem;
+    margin-left: 1rem;
  }
 
  button {
      display: inline-block;
-     background-color: #f1c40f;
-     color: #34495e;
-     border: none;
      float: right;
+     background-color: white;
+     color: #34495e;
      margin-left: 2rem;
  }

@@ -1,10 +1,23 @@
-input {
-    padding: 0.2rem 1rem;
-    text-transform: uppercase;
+form {
+    position: absolute;
+    margin-top: 90vh;
+    display: inline-block;
 }
 
-button {
+input {
+    padding: 0.1rem 1rem;
+    border: 1px solid #ecf0f1;
+    line-height: 2rem;
+}
+
+span {
     text-transform: uppercase;
-    padding: 0.2rem 1rem;
-    font-weight: bold;
+    padding: 0.4rem 1rem;
+    line-height: 2rem;
+    cursor: pointer;
+    background-color: #f1c40f;
+    border: 1px solid #f1c40f;
+    min-height: 1rem;
+    color: white;
+    margin-left: 2px;
 }

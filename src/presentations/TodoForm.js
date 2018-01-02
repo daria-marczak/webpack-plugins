@@ -4,7 +4,7 @@ import style from "./TodoForm.css"
 const TodoForm = (props) => (
     <form>
         <input type="text" value={props.value} onChange={(e) => props.fill(e)} placeholder="Task"/>
-        <button type="submit" value="Submit" onClick={() => props.submit(props.input)}>Submit</button>
+        <span type="submit" className="submit" value="Submit" onClick={(e) => props.submit(e, props.input)}>Submit</span>
     </form>
 )
 
