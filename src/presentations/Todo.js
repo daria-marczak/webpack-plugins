@@ -5,7 +5,7 @@ const Todo = (props) => {
     return
     <div className={style.Todo}>
         <li>{props.content.text}</li>
-        <button type="button" className="button" onClick={() => props.remove(props.content.id)}>x</button>
+        <span onClick={() => props.remove(props.content.id)}>x</span>
     </div>
 }
 

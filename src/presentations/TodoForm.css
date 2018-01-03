@@ -10,7 +10,7 @@ input {
     line-height: 2rem;
 }
 
-span {
+.submit {
     text-transform: uppercase;
     padding: 0.4rem 1rem;
     line-height: 2rem;
