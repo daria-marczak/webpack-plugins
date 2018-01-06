@@ -24,10 +24,10 @@ class App extends React.Component {
             ]
         }
     }
-    addTodo(e, val) {
+    addTodo(e) {
         e.preventDefault();
         const todo = {
-            text: val,
+            text: this.state.input,
             id: uuid.v4(),
         }
         const data = [...this.state.data, todo]
